@@ -9,9 +9,19 @@
 
 **Here how it looks like:**
 
-![DRYML Cover Image](./src/png/dryml-cover-image.png)
-
-
+```
+james->mary: love
+    in:
+        flowers [fresh]
+            colour = red
+        chocolate [solid]
+            type = milk
+    out:
+        kisses
+            sweet = true
+        hugs
+            strong = true
+```
 
 For the basic information about the DRYML, read the article "[**Introducing DRYML**](https://medium.com/@v.grigoryevskiy/introducing-dryml-7d9e049ac91)"
 
