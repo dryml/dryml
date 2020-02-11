@@ -53,6 +53,7 @@ Two core (set of) principles were used during the development of the DRYML
 
 The documentation structure follows the recommendation, defined in the "[AIFORSE Information Framework](https://gitlab.com/aiforse/aiforse-framework/-/blob/master/Information%20Framework%20(AIFORSE_infoF)/AIFORSE%20Information%20Framework.md)", which are explained in the article "[Software Engineering Artifacts — Let’s agree on Terminology](https://medium.com/ai-for-software-engineering/software-engineering-artifacts-lets-agree-on-terminology-4f009b351361)".
 
+* [Business Goals](./DOCUMENTATION/1.%20Business%20Goals/Business%20Goals)
 * [Solution Description](./DOCUMENTATION/Solution%20Description/)
   * [Solution Architecture](./DOCUMENTATION/Solution%20Description/Solution%20Architecture/)
 
