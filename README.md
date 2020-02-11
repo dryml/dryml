@@ -27,6 +27,12 @@ For the basic information about the DRYML, read the article "[**Introducing DRYM
 
 
 
+## Examples
+
+* [**momofuku-s-soy-sauce-eggs.dryml**](https://gist.github.com/vgrigoryevskiy/0d06cdff91a424c6d049d62e7807d562)
+
+
+
 ## Main Principles and Reasoning
 
 Two core (set of) principles were used during the development of the DRYML
