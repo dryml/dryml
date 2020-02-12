@@ -11,7 +11,7 @@ Here how it works:
 1. You describe process(es) with simple statements (see examples below)
 2. DRYML 'compiles' the process(es) and stores it in JSON format (public schema):
    1. You can version and compare processes
-   2. You can link several processes together, and updated shared objects at a time
+   2. You can link several processes together, and update shared objects at a time
 3. DRYML validates all the processes defined in a project for
    1. Data consistency 
    2. States transitions 
