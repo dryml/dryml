@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile modified="2020-02-12T16:50:46.408Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36" etag="o3csq9mURKorf7WJ16uh" version="12.6.7" type="google">
+  <diagram name="v.2020-02-09" id="JYrosjh92gScT7D2sl39">
+    <mxGraphModel dx="2355" dy="681" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0" extFonts="Montserrat^https://fonts.googleapis.com/css?family=Montserrat">
+      <root>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-0"/>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-1" parent="LzsyuQ6FGSTyZdtTdNZz-0"/>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-6" value="DRYML" style="rounded=1;arcSize=0;dashed=1;strokeColor=#000000;fillColor=none;gradientColor=none;dashPattern=1 1;strokeWidth=2;verticalAlign=top;align=center;fontFamily=Montserrat;FType=g;fontStyle=1" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-872" y="108.5" width="226" height="384" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-7" value="Public Contracts" style="rounded=1;arcSize=10;dashed=1;strokeColor=#000000;fillColor=none;gradientColor=none;dashPattern=1 1;strokeWidth=2;verticalAlign=top;align=center;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-1140" y="214" width="230" height="325" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-10" value="&amp;lt;&amp;lt;DRYML File(s)&amp;gt;&amp;gt;&lt;br&gt;*.dryml" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="139" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-11" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-10" target="LzsyuQ6FGSTyZdtTdNZz-22" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-845" y="431" as="sourcePoint"/>
+            <mxPoint x="-413" y="159" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-14" value="«Library»&lt;br&gt;&lt;b&gt;DRYML_JSON &lt;br&gt;to&lt;br&gt;PlantUML_JSON&lt;br&gt;Converter&lt;/b&gt;" style="html=1;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="398" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-15" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-14" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-16" value="&amp;lt;&amp;lt;PlantUML Files&amp;gt;&amp;gt;&lt;br&gt;*.puml&lt;br&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="557" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-17" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-24" target="LzsyuQ6FGSTyZdtTdNZz-14" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-749" y="324" as="sourcePoint"/>
+            <mxPoint x="-749" y="379" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-523" y="376.5"/>
+              <mxPoint x="-759" y="376.5"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-18" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-14" target="6gwy4wgTPHxBCKtS1-6w-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-599" y="590" as="sourcePoint"/>
+            <mxPoint x="-639" y="470" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-623" y="436"/>
+              <mxPoint x="-623" y="436"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-22" value="«Library»&lt;br&gt;&lt;b&gt;DRYML &lt;br&gt;to &lt;br&gt;DRYML_JSON &lt;br&gt;Converter&lt;/b&gt;" style="html=1;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="251.5" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-23" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-22" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-24" value="&amp;lt;&amp;lt;JSON Files&amp;gt;&amp;gt;&lt;br&gt;*.json&lt;br&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="251.5" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-30" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-22" target="LzsyuQ6FGSTyZdtTdNZz-24" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-598" y="82" as="sourcePoint"/>
+            <mxPoint x="-588" y="186" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-638" y="289"/>
+              <mxPoint x="-638" y="289"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-42" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-128" y="108.5" width="249" height="220.5" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-43" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-109" y="124.5" width="210" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-44" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#99FF99;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-109" y="168.5" width="48" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-45" value="- Artefact" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-51" y="170.5" width="159" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-46" value="" style="endArrow=none;html=1;fontSize=16;entryX=0.912;entryY=0.198;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.08;exitY=0.202;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-110" y="153.5" as="sourcePoint"/>
+            <mxPoint x="97" y="152.5" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-47" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#CCE5FF;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-109" y="207.5" width="48" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-48" value="- DRYML Comp-t" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-51" y="209.5" width="159" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-49" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#B0E3E6;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-109" y="246.5" width="48" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-50" value="- External Comp-t" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-51" y="248.5" width="159" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-51" value="" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#AFFFAF;strokeColor=#000000;shape=mxgraph.archimate3.artifact;fontSize=16;fontColor=#00FF00;align=left;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-92.5" y="169" width="15" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-52" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-95" y="209" width="20" height="20" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-53" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-95" y="248.5" width="20" height="20" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-61" value="«Library»&lt;br&gt;&lt;b&gt;PlantUML&lt;/b&gt;" style="html=1;fillColor=#B0E3E6;strokeColor=#0e8088;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="687" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-62" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-61" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-63" value="«Library»&lt;br&gt;&lt;b&gt;Graphviz&lt;/b&gt;" style="html=1;fillColor=#B0E3E6;strokeColor=#0e8088;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="816" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-64" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-63" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-65" value="«Library»&lt;br&gt;&lt;b&gt;DRYML&lt;br&gt;IntelliJ Idea Plugin&amp;nbsp;&lt;/b&gt;" style="html=1;fillColor=#cce5ff;strokeColor=#36393d;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-381" y="139" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-66" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-65" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-67" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-16" target="LzsyuQ6FGSTyZdtTdNZz-61" edge="1">
+          <mxGeometry x="-0.0023" width="160" relative="1" as="geometry">
+            <mxPoint x="-749" y="604" as="sourcePoint"/>
+            <mxPoint x="-749" y="664" as="targetPoint"/>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-69" value="&amp;lt;&amp;lt;PlantUML Graph&amp;gt;&amp;gt;&lt;br&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="687" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-70" value="" style="edgeStyle=none;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-61" target="LzsyuQ6FGSTyZdtTdNZz-69" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-839" y="863" as="sourcePoint"/>
+            <mxPoint x="-925" y="863" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-71" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-69" target="LzsyuQ6FGSTyZdtTdNZz-63" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1015" y="908" as="sourcePoint"/>
+            <mxPoint x="-1015" y="949" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-75" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;entryPerimeter=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-63" target="LzsyuQ6FGSTyZdtTdNZz-76" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-829" y="1095.3238636363637" as="sourcePoint"/>
+            <mxPoint x="-915" y="1120" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-610" y="853"/>
+              <mxPoint x="-610" y="853"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-76" value="&amp;lt;&amp;lt;PNG Pictures&amp;gt;&amp;gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="816" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="LzsyuQ6FGSTyZdtTdNZz-89" value="&amp;lt;&amp;lt;JSON Schema&amp;gt;&amp;gt;&lt;br&gt;AIFORSE Integration Framework - Process JSON Schema.json" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-1115" y="251.5" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-0" value="&amp;lt;&amp;lt;validated against&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=1;verticalAlign=bottom;strokeWidth=2;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-24" target="LzsyuQ6FGSTyZdtTdNZz-89" edge="1">
+          <mxGeometry x="-0.0243" width="160" relative="1" as="geometry">
+            <mxPoint x="-669" y="415.5" as="sourcePoint"/>
+            <mxPoint x="-230" y="415.5" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-568" y="354.5"/>
+              <mxPoint x="-980" y="354.5"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-1" value="&amp;lt;&amp;lt;uses&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=1;verticalAlign=bottom;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-22" target="LzsyuQ6FGSTyZdtTdNZz-89" edge="1">
+          <mxGeometry x="-0.0734" y="17" width="160" relative="1" as="geometry">
+            <mxPoint x="-839" y="440.5" as="sourcePoint"/>
+            <mxPoint x="-1015" y="333.5" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-923" y="292"/>
+              <mxPoint x="-923" y="289"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-2" value="&amp;lt;&amp;lt;JSON Files&amp;gt;&amp;gt;&lt;br&gt;*.json&lt;br&gt;" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-613" y="398" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-3" value="«Library»&lt;br&gt;&lt;b&gt;PlantUML_JSON &lt;br&gt;to&lt;br&gt;PlantUML&lt;br&gt;Converter&lt;/b&gt;" style="html=1;fillColor=#B0E3E6;strokeColor=#0e8088;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="557" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-4" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="6gwy4wgTPHxBCKtS1-6w-3" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="6gwy4wgTPHxBCKtS1-6w-2" target="6gwy4wgTPHxBCKtS1-6w-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-749" y="574" as="sourcePoint"/>
+            <mxPoint x="-515" y="499" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-523" y="531.5"/>
+              <mxPoint x="-759" y="531.5"/>
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="6gwy4wgTPHxBCKtS1-6w-3" target="LzsyuQ6FGSTyZdtTdNZz-16" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-849" y="595" as="sourcePoint"/>
+            <mxPoint x="-515" y="499" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-7" value="&amp;lt;&amp;lt;JSON Schema&amp;gt;&amp;gt;&lt;br&gt;PlantUML JSON Schema.json" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-1115" y="398" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-8" value="&amp;lt;&amp;lt;validated against&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=1;verticalAlign=bottom;strokeWidth=2;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="6gwy4wgTPHxBCKtS1-6w-2" target="6gwy4wgTPHxBCKtS1-6w-7" edge="1">
+          <mxGeometry x="-0.0266" width="160" relative="1" as="geometry">
+            <mxPoint x="-560" y="333.5" as="sourcePoint"/>
+            <mxPoint x="-1015" y="333.5" as="targetPoint"/>
+            <Array as="points">
+              <mxPoint x="-568" y="513.5"/>
+              <mxPoint x="-980" y="513.5"/>
+            </Array>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-9" value="" style="html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=0;verticalAlign=bottom;strokeWidth=2;endFill=0;exitX=0.078;exitY=0.688;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" edge="1">
+          <mxGeometry x="-0.0023" width="160" relative="1" as="geometry">
+            <mxPoint x="-108.57799999999975" y="298.9960000000001" as="sourcePoint"/>
+            <mxPoint x="-61" y="299" as="targetPoint"/>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-10" value="- Data Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-51" y="288" width="159" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-14" value="«Library»&lt;br&gt;&lt;b&gt;DRYML Runner&lt;/b&gt;" style="html=1;fillColor=#cce5ff;strokeColor=#36393d;dashed=1;dashPattern=1 2;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1" treatAsSingle="0">
+          <mxGeometry x="-849" y="139" width="180" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-15" value="" style="shape=component;jettyWidth=8;jettyHeight=4;fontFamily=Montserrat;FType=g;" parent="6gwy4wgTPHxBCKtS1-6w-14" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-19" value="&amp;lt;&amp;lt;uses&amp;gt;&amp;gt;" style="html=1;strokeColor=#808080;endArrow=open;endSize=10;dashed=1;verticalAlign=bottom;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;endFill=0;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" source="LzsyuQ6FGSTyZdtTdNZz-14" target="6gwy4wgTPHxBCKtS1-6w-7" edge="1">
+          <mxGeometry x="-0.0734" y="17" width="160" relative="1" as="geometry">
+            <mxPoint x="-839" y="283" as="sourcePoint"/>
+            <mxPoint x="-925" y="283" as="targetPoint"/>
+            <mxPoint as="offset"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-23" value="" style="endArrow=none;html=1;strokeWidth=3;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-164" y="907" as="sourcePoint"/>
+            <mxPoint x="-164" y="107" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-24" value="" style="endArrow=none;html=1;strokeWidth=3;fontFamily=Montserrat;FType=g;" parent="LzsyuQ6FGSTyZdtTdNZz-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1144" y="79" as="sourcePoint"/>
+            <mxPoint x="119" y="79" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6gwy4wgTPHxBCKtS1-6w-25" value="DRYML System Architecture and Data Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 2;fontFamily=Montserrat;FType=g;fontSize=32;fontStyle=0" parent="LzsyuQ6FGSTyZdtTdNZz-1" vertex="1">
+          <mxGeometry x="-1140" y="28" width="971" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
