@@ -1,5 +1,29 @@
 # DRYML -- compiled software modelling language, for free
 
+## TL;DR
+
+**Imagine like now you can 'compile' and 'test' your software specification before you actually code it.** 
+
+DRYML is a software modelling language, e.g. like PlantUML, but way more powerful.
+
+Here how it works:
+
+1. You describe process(es) with simple statements (see examples below)
+2. DRYML 'compiles' the process(es) and stores it in JSON format (public schema):
+   1. You can version and compare processes
+   2. You can link several processes together, and updated shared objects at a time
+3. DRYML validates all the processes defined in a project for
+   1. Data consistency 
+   2. States transitions 
+   3. Parameters data types 
+4. DRYML automatically generates UML diagrams for you of all the common types
+   1. Use Case
+   2. Activity Flow
+   3. Sequence Flow
+   4. Class 
+   5. State Machine
+
+
 
 ## About DRYML
 
