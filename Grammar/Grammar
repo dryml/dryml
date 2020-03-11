@@ -1,0 +1,67 @@
+# Grammar for DRYML
+
+
+The grammar is described in the Extended Backus–Naur form, using
+#   *   for repetition,
+#   +   for at-least-once repetition,
+#   []  for optional parts,
+#   |   for alternatives, and
+#   ()  for grouping.
+
+
+file_input: (NEWLINE | stmt)* ENDMARKER;
+stmt: actordef | resourcedef | activitydef;
+
+
+actordef: 'actor' actor_id actor_name?;
+actor_id: NAME;
+actor_name: STRING;
+
+resourcedef: 'resource' resource_id resource_name? resource_body;
+resource_id: NAME;
+resource_name: STRING;
+resource_body: NEWLINE INDENT resource_states? resource_parameters? DEDENT;
+
+resource_states: 'states:' resource_states_list;
+resource_states_list: NEWLINE INDENT resource_state_def+ DEDENT;
+resource_state_def: resource_state_id resource_state_name? NEWLINE;
+resource_state_id: NAME;
+resource_state_name: STRING;
+
+resource_parameters: 'parameters:' resource_parameters_list;
+resource_parameters_list: NEWLINE INDENT resource_parameter_def+ DEDENT;
+resource_parameter_def: resource_parameter_id resource_parameter_name? NEWLINE;
+resource_parameter_id: NAME;
+resource_parameter_name: STRING;
+
+activitydef: actor_a_id (control_flow_type actor_b_id)? ':' activity_id activity_name? activity_body;
+actor_a_id: actor_id;
+actor_b_id: actor_id;
+control_flow_type: CONTROL_FLOW;
+activity_id: NAME;
+activity_name: STRING;
+activity_body: NEWLINE INDENT input_resources? output_resources? DEDENT;
+
+input_resources: 'in:' input_resources_list;
+input_resources_list: NEWLINE INDENT input_resource_body DEDENT;
+input_resource_body: input_resource_id ['[' input_resource_state_id ']'] input_resource_parameters_body NEWLINE;
+input_resource_id: resource_id;
+input_resource_state_id: resource_state_id;
+
+input_resource_parameters_body: NEWLINE INDENT input_resource_parameters? DEDENT;
+input_resource_parameters: input_resource_parameter_body+;
+input_resource_parameter_body: input_resource_parameter_id '=' input_resource_parameter_value NEWLINE;
+input_resource_parameter_id: resource_parameter_id;
+input_resource_parameter_value: STRING;
+
+output_resources: 'out:' output_resources_list;
+output_resources_list: NEWLINE INDENT output_resource_body+ DEDENT;
+output_resource_body: output_resource_id ['[' output_resource_state_id ']'] output_resource_parameters_body NEWLINE;
+output_resource_id: resource_id;
+output_resource_state_id: resource_state_id;
+
+output_resource_parameters_body: NEWLINE INDENT output_resource_parameters? DEDENT;
+output_resource_parameters: output_resource_parameter_body+;
+output_resource_parameter_body: output_resource_parameter_id '=' output_resource_parameter_value NEWLINE;
+output_resource_parameter_id: resource_parameter_id;
+output_resource_parameter_value: STRING;

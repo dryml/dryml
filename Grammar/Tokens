@@ -1,0 +1,23 @@
+ENDMARKER
+NAME
+NUMBER
+STRING
+NEWLINE
+INDENT
+DEDENT
+
+
+LPAR                    '('
+RPAR                    ')'
+LSQB                    '['
+RSQB                    ']'
+COLON                   ':'
+LESS                    '<'
+GREATER                 '>'
+EQUAL                   '='
+CONTROL_FLOW            '->'
+
+
+COMMENT
+NL
+ENCODING
