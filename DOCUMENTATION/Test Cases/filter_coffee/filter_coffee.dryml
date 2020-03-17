@@ -1,0 +1,137 @@
+## ==============================================
+## ACTORS
+## ==============================================
+
+actor coffee_maker
+
+## ==============================================
+## Resources
+## ==============================================
+
+coffee
+	states:
+		grain
+		ground
+	parameters:
+		weight
+
+water
+	states:
+		normal
+		boiled
+	parameters:
+		temperature_level
+		volume
+
+filter
+	parameters:
+		colour
+		material
+		temp_level
+
+coffee_grinder
+	states:
+		functioning
+
+pourover
+	parameters:
+		temp_level
+
+tea_pot
+
+coffe_pot
+
+cook_top
+	states:
+		functioning
+
+filtered_coffee
+	states:
+		liquid
+	parameters:
+		volume
+		temp_level
+
+## ==============================================
+## Activities
+## ==============================================
+
+## To heat a pourover and a filter with the boiled water
+
+Coffee_maker: "Boils a water in a pot"
+    in: 
+        water [normal]
+            tempe_level = cold
+            volume = 1[liter]
+        tea_pot
+        cook_top
+        	state = functioning
+    out:
+        water [boiled]
+        	temperature_level = hot
+        	volume = 1[liter]
+
+Coffee_maker: "Heats a pourover and a filter with a boiled water"
+	in:
+        water [boiled]
+        	temperature_level = hot
+        	volume = 0.1[liter]
+        pourover
+        	temp_level = cold
+        filter
+        	colour = white
+        	material = paper
+        	temp_level = cold
+	out:
+		pourover
+        	temp_level = warm
+        filter
+        	colour = white
+        	material = paper
+        	temp_level = warm
+
+## To grind a grain coffee
+
+Coffee_maker: "Grinds the grain coffie"
+	in:
+		coffee [grain]
+			weight = 20[g]
+		coffee_grinder
+			state = functioning
+	out:
+		coffee [ground]
+			weight = 20[g]
+
+##	To filter a ground coffee
+
+Coffee_maker: "Filters the coffee"
+	in:
+		coffee [ground]
+			weight = 20[g]
+		pourover
+        	temp_level = warm
+        filter
+        	colour = white
+        	material = paper
+        	temp_level = warm
+        coffe_pot
+       	water [boiled]
+        	temp_level = hot
+        	volume = 0.5[liter]
+	out:
+		filtered_coffee [liquid]
+			temp_level = hot
+			volume = 0.4[liter]
+
+
+
+
+
+
+
+
+
+
+
+
+
