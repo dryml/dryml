@@ -56,33 +56,32 @@ filtered_coffee
 ## ==============================================
 
 ## To heat a pourover and a filter with the boiled water
-
 coffee_maker: "Boils a water in a pot"
-    in: 
-        water [liquid] x1[liter]
-            temperature_level = cold
-        tea_pot
-        cook_top [functioning]
-    out:
-        water [liquid]
-        	temperature_level = hot
+	in: 
+		water [liquid] x1[liter]
+			temperature_level = cold
+		tea_pot
+		cook_top [functioning]
+	out:
+		water [liquid]
+			temperature_level = hot
 
+## Put pourover and filter together to get a 'pourover system'
 coffee_maker: "Assembles the pourover system and heats it with water"
 	in:
-        water [liquid] x0.1[liter]
-        	temperature_level = hot
-        pourover
-        	temperature_level = cold
-        filter
-        	colour = white
-        	material = paper
-        	temperature_level = cold
+		water [liquid] x0.1[liter]
+			temperature_level = hot
+		pourover
+			temperature_level = cold
+		filter
+			colour = white
+			material = paper
+			temperature_level = cold
 	out:
 		pourover_system
-        	temperature_level = warm
+			temperature_level = warm
 
 ## To grind a grain coffee
-
 coffee_maker: "Grinds the grain coffee"
 	in:
 		coffee [grain] x20[gram]
@@ -90,30 +89,15 @@ coffee_maker: "Grinds the grain coffee"
 	out:
 		coffee [ground]
 
-##	To filter a ground coffee
-
+## To filter a ground coffee
 coffee_maker: "Filters the coffee"
 	in:
 		coffee [ground] x20[gram]
 		pourover_system
-        	temperature_level = warm
-        coffe_pot
-       	water [liquid] x0.5[liter]
-        	temperature_level = hot
+			temperature_level = warm
+        	coffe_pot
+		water [liquid] x0.5[liter]
+			temperature_level = hot
 	out:
 		filtered_coffee [liquid] x0.4[liter]
 			temperature_level = hot
-
-
-
-
-
-
-
-
-
-
-
-
-
-
