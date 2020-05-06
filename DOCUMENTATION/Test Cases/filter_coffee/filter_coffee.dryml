@@ -1,0 +1,103 @@
+## ==============================================
+## ACTORS
+## ==============================================
+
+actor coffee_maker
+
+## ==============================================
+## Resources
+## ==============================================
+
+coffee
+	states:
+		grain
+		ground
+
+water
+	states:
+		liquid
+	parameters:
+		temperature_level		
+
+filter
+	parameters:
+		colour
+		material
+		temperature_level
+
+coffee_grinder
+	states:
+		functioning
+
+pourover
+	parameters:
+		temperature_level
+
+pourover_system
+	parameters:
+		temperature_level
+
+tea_pot
+
+coffe_pot
+
+cook_top
+	states:
+		functioning
+
+filtered_coffee
+	states:
+		liquid
+	parameters:
+		temperature_level
+
+## ==============================================
+## Activities
+## ==============================================
+
+## To heat a pourover and a filter with the boiled water
+coffee_maker: "Boils a water in a pot"
+	in: 
+		water [liquid] x1[liter]
+			temperature_level = cold
+		tea_pot
+		cook_top [functioning]
+	out:
+		water [liquid]
+			temperature_level = hot
+
+## Put pourover and filter together to get a 'pourover system'
+coffee_maker: "Assembles the pourover system and heats it with water"
+	in:
+		water [liquid] x0.1[liter]
+			temperature_level = hot
+		pourover
+			temperature_level = cold
+		filter
+			colour = white
+			material = paper
+			temperature_level = cold
+	out:
+		pourover_system
+			temperature_level = warm
+
+## To grind a grain coffee
+coffee_maker: "Grinds the grain coffee"
+	in:
+		coffee [grain] x20[gram]
+		coffee_grinder [functioning]
+	out:
+		coffee [ground]
+
+## To filter a ground coffee
+coffee_maker: "Filters the coffee"
+	in:
+		coffee [ground] x20[gram]
+		pourover_system
+			temperature_level = warm
+        	coffe_pot
+		water [liquid] x0.5[liter]
+			temperature_level = hot
+	out:
+		filtered_coffee [liquid] x0.4[liter]
+			temperature_level = hot
