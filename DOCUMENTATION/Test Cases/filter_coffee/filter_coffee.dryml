@@ -12,22 +12,18 @@ coffee
 	states:
 		grain
 		ground
-	parameters:
-		weight
 
 water
 	states:
-		normal
-		boiled
+		liquid
 	parameters:
-		temperature_level
-		volume
+		temperature_level		
 
 filter
 	parameters:
 		colour
 		material
-		temp_level
+		temperature_level
 
 coffee_grinder
 	states:
@@ -35,7 +31,11 @@ coffee_grinder
 
 pourover
 	parameters:
-		temp_level
+		temperature_level
+
+pourover_system
+	parameters:
+		temperature_level
 
 tea_pot
 
@@ -49,8 +49,7 @@ filtered_coffee
 	states:
 		liquid
 	parameters:
-		volume
-		temp_level
+		temperature_level
 
 ## ==============================================
 ## Activities
@@ -58,70 +57,53 @@ filtered_coffee
 
 ## To heat a pourover and a filter with the boiled water
 
-Coffee_maker: "Boils a water in a pot"
+coffee_maker: "Boils a water in a pot"
     in: 
-        water [normal]
-            tempe_level = cold
-            volume = 1[liter]
+        water [liquid] x1[liter]
+            temperature_level = cold
         tea_pot
-        cook_top
-        	state = functioning
+        cook_top [functioning]
     out:
-        water [boiled]
+        water [liquid]
         	temperature_level = hot
-        	volume = 1[liter]
 
-Coffee_maker: "Heats a pourover and a filter with a boiled water"
+coffee_maker: "Assembles the pourover system and heats it with water"
 	in:
-        water [boiled]
+        water [liquid] x0.1[liter]
         	temperature_level = hot
-        	volume = 0.1[liter]
         pourover
-        	temp_level = cold
+        	temperature_level = cold
         filter
         	colour = white
         	material = paper
-        	temp_level = cold
+        	temperature_level = cold
 	out:
-		pourover
-        	temp_level = warm
-        filter
-        	colour = white
-        	material = paper
-        	temp_level = warm
+		pourover_system
+        	temperature_level = warm
 
 ## To grind a grain coffee
 
-Coffee_maker: "Grinds the grain coffie"
+coffee_maker: "Grinds the grain coffee"
 	in:
-		coffee [grain]
-			weight = 20[g]
-		coffee_grinder
-			state = functioning
+		coffee [grain] x20[gram]
+		coffee_grinder [functioning]
 	out:
 		coffee [ground]
-			weight = 20[g]
 
 ##	To filter a ground coffee
 
-Coffee_maker: "Filters the coffee"
+coffee_maker: "Filters the coffee"
 	in:
-		coffee [ground]
-			weight = 20[g]
-		pourover
-        	temp_level = warm
-        filter
-        	colour = white
-        	material = paper
-        	temp_level = warm
+		coffee [ground] x20[gram]
+		pourover_system
+        	temperature_level = warm
         coffe_pot
-       	water [boiled]
-        	temp_level = hot
-        	volume = 0.5[liter]
+       	water [liquid] x0.5[liter]
+        	temperature_level = hot
 	out:
-		filtered_coffee [liquid]
-			temp_level = hot
-			volume = 0.4[liter]
+		filtered_coffee [liquid] x0.4[liter]
+			temperature_level = hot
+
 
 
 
