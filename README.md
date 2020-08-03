@@ -91,5 +91,5 @@ Read the [Contribution Guide](./CONTRIBUTING.md).
 
 ## License
 
-DRYML is licensed under the [GNU General Public License v3.0](./LICENSE).
+DRYML is licensed under the [MIT License](./LICENSE).
 
