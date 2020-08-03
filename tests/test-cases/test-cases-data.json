@@ -1,0 +1,22 @@
+[
+    {
+        "input_dryml_file": "./data/inputs-repository/0-in.dryml",
+        "output_json_file": "./data/dryml-to-json/0-out.json",
+        "target-schema": "http://aiforse.org/framework/integration/schemas/actors.json#"
+    },
+    {
+        "input_dryml_file": "./data/inputs-repository/1-in.dryml",
+        "output_json_file": "./data/dryml-to-json/1-out.json",
+        "target-schema": "http://aiforse.org/framework/integration/schemas/resources.json#"
+    },
+    {
+        "input_dryml_file": "./data/inputs-repository/2-in.dryml",
+        "output_json_file": "./data/dryml-to-json/2-out.json",
+        "target-schema": "http://aiforse.org/framework/integration/schemas/activities.json#"
+    },
+    {
+        "input_dryml_file": "./data/inputs-repository/3-in.dryml",
+        "output_json_file": "./data/dryml-to-json/3-out.json",
+        "target-schema": "http://aiforse.org/framework/integration/schemas/processes.json#"
+    }
+]

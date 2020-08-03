@@ -1,0 +1,108 @@
+{
+    "links": {
+        "self": "/processes"
+    },
+    "data": [
+        {
+            "type": "processes",
+            "id": "proc",
+            "relationships": {
+                "actors": {
+                    "links": {
+                        "self": "/processes/proc/relationships/actors"
+                    },
+                    "data": [
+                        {
+                            "type": "actors",
+                            "id": "a"
+                        },
+                        {
+                            "type": "actors",
+                            "id": "b"
+                        }
+                    ]
+                },
+                "resources": {
+                    "links": {
+                        "self": "/processes/proc/relationships/resources"
+                    },
+                    "data": [
+                        {
+                            "type": "resources",
+                            "id": "x"
+                        },
+                        {
+                            "type": "resources",
+                            "id": "y"
+                        }
+                    ]
+                },
+                "activities": {
+                    "links": {
+                        "self": "/processes/proc/relationships/activities"
+                    },
+                    "data": [
+                        {
+                            "type": "activities",
+                            "id": "001",
+                            "attributes": {
+                                "flow-type": "SYNC"
+                            },
+                            "relationships": {
+                                "actor-a": {
+                                    "links": {
+                                        "self": "/processes/proc/relationships/activities/001/relationships/actor-a",
+                                        "related": "/actors/a"
+                                    },
+                                    "data": {
+                                        "type": "actors",
+                                        "id": "a"
+                                    }
+                                },
+                                "actor-b": {
+                                    "links": {
+                                        "self": "/processes/proc/relationships/activities/001/relationships/actor-a",
+                                        "related": "/actors/b"
+                                    },
+                                    "data": {
+                                        "type": "actors",
+                                        "id": "b"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "activities",
+                            "id": "002",
+                            "attributes": {
+                                "flow-type": "SYNC"
+                            },
+                            "relationships": {
+                                "actor-a": {
+                                    "links": {
+                                        "self": "/processes/proc/relationships/activities/002/relationships/actor-a",
+                                        "related": "/actors/b"
+                                    },
+                                    "data": {
+                                        "type": "actors",
+                                        "id": "b"
+                                    }
+                                },
+                                "actor-b": {
+                                    "links": {
+                                        "self": "/processes/proc/relationships/activities/002/relationships/actor-a",
+                                        "related": "/actors/a"
+                                    },
+                                    "data": {
+                                        "type": "actors",
+                                        "id": "a"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

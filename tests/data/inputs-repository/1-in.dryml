@@ -1,0 +1,24 @@
+resource x
+resource y "Y-Name"
+resource z "Z Full Name"
+    states:
+        001
+        a
+        002_b
+        ca "Good State"
+resource p
+    parameters:
+        param_0
+        1
+        g
+        e "E-resource"
+        long_value "Decent Amount"
+resource q
+    states:
+        initial
+        intermediate "OK"
+        final "Fin"
+    parameters:
+        time "How much does it take?"
+        speed "Does it go fast?"
+        distance "Is it far away?"

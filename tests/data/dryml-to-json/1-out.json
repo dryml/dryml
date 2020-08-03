@@ -1,0 +1,155 @@
+{
+    "links": {
+        "self": "/resources"
+    },
+    "data": [
+        {
+            "type": "resources",
+            "id": "x"
+        },
+        {
+            "type": "resources",
+            "id": "y",
+            "attributes": {
+                "name": "Y-Name"
+            }
+        },
+        {
+            "type": "resources",
+            "id": "z",
+            "attributes": {
+                "name": "Z Full Name"
+            },
+            "relationships": {
+                "states": {
+                    "links": {
+                        "self": "/resources/z/relationships/states",
+                        "related": "/resources/z/states"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-states",
+                            "id": "001"
+                        },
+                        {
+                            "type": "resource-states",
+                            "id": "a"
+                        },
+                        {
+                            "type": "resource-states",
+                            "id": "002_b"
+                        },
+                        {
+                            "type": "resource-states",
+                            "id": "ca",
+                            "attributes": {
+                                "name": "Good State"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "resources",
+            "id": "p",
+            "relationships": {
+                "parameters": {
+                    "links": {
+                        "self": "/resources/p/relationships/parameters",
+                        "related": "/resources/p/parameters"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-parameters",
+                            "id": "param_0"
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "1"
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "g"
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "e",
+                            "attributes": {
+                                "name": "E-resource"
+                            }
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "long_value",
+                            "attributes": {
+                                "name": "Decent Amount"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "resources",
+            "id": "q",
+            "relationships": {
+                "states": {
+                    "links": {
+                        "self": "/resources/q/relationships/states",
+                        "related": "/resources/q/states"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-states",
+                            "id": "initial"
+                        },
+                        {
+                            "type": "resource-states",
+                            "id": "intermediate",
+                            "attributes": {
+                                "name": "OK"
+                            }
+                        },
+                        {
+                            "type": "resource-states",
+                            "id": "final",
+                            "attributes": {
+                                "name": "Fin"
+                            }
+                        }
+                    ]
+                },
+                "parameters": {
+                    "links": {
+                        "self": "/resources/q/relationships/parameters",
+                        "related": "/resources/q/parameters"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-parameters",
+                            "id": "time",
+                            "attributes": {
+                                "name": "How much does it take?"
+                            }
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "speed",
+                            "attributes": {
+                                "name": "Does it go fast?"
+                            }
+                        },
+                        {
+                            "type": "resource-parameters",
+                            "id": "distance",
+                            "attributes": {
+                                "name": "Is it far away?"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
