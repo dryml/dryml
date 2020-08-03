@@ -11,7 +11,7 @@ from dryml.helpers import (
 def dryml_to_json(dryml_s: str) -> str:
     """
     Converts a DRYML Data (provided in the String) to a JSON Document (as a String).
-    Examples: https://github.com/dryml/dryml/-/tree/master/tests/data  # TODO: Validate the Path when examples are ready
+    Examples: https://github.com/dryml/dryml/tree/master/tests/data
 
     :param dryml_s: DRYML Document as a String
     :return: JSON Document as a String
@@ -23,7 +23,7 @@ def dryml_to_json(dryml_s: str) -> str:
 def dryml_file_to_json(path: str) -> Union[Type[JSONDecodeError], str]:
     """
     Converts a DRYML Data (provided in the DRYML File) to a JSON Document (as a String).
-    Examples: https://github.com/dryml/dryml/-/tree/master/tests/data  # TODO: Validate the Path when examples are ready
+    Examples: https://github.com/dryml/dryml/tree/master/tests/data
 
     :param path: DRYML Document as a Pointer to a File
     :return: JSON Document as a String
@@ -37,7 +37,7 @@ def dryml_file_to_json(path: str) -> Union[Type[JSONDecodeError], str]:
 def dryml_string_to_json(s: str) -> Union[Type[JSONDecodeError], str]:
     """
     Converts a DRYML Data (provided in the DRYML String) to a JSON Document (as a String).
-    Examples: https://github.com/dryml/dryml/-/tree/master/tests/data  # TODO: Validate the Path when examples are ready
+    Examples: https://github.com/dryml/dryml/tree/master/tests/data
 
     :param s: DRYML Document as a String
     :return: JSON Document as a String
