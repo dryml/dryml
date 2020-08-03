@@ -1,0 +1,8 @@
+actor a
+actor b
+
+resource x
+resource y
+
+a -> b: 001
+b -> a: 002

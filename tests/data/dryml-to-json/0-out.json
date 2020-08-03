@@ -1,0 +1,51 @@
+{
+    "links": {
+        "self": "/actors"
+    },
+    "data": [
+        {
+            "type": "actors",
+            "id": "a"
+        },
+        {
+            "type": "actors",
+            "id": "actor_b"
+        },
+        {
+            "type": "actors",
+            "id": "c123"
+        },
+        {
+            "type": "actors",
+            "id": "d_74"
+        },
+        {
+            "type": "actors",
+            "id": "e",
+            "attributes": {
+                "name": "Actor E"
+            }
+        },
+        {
+            "type": "actors",
+            "id": "actor_d",
+            "attributes": {
+                "name": "Actor actor_d"
+            }
+        },
+        {
+            "type": "actors",
+            "id": "f123",
+            "attributes": {
+                "name": "F123"
+            }
+        },
+        {
+            "type": "actors",
+            "id": "d_74",
+            "attributes": {
+                "name": "D_74"
+            }
+        }
+    ]
+}

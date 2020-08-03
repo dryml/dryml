@@ -1,0 +1,649 @@
+{
+    "links": {
+        "self": "/activities"
+    },
+    "data": [
+        {
+            "type": "activities",
+            "id": "001",
+            "attributes": {
+                "flow-type": "SYNC"
+            },
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/001/relationships/actor-a",
+                        "related": "/actors/actor1"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "actor1"
+                    }
+                },
+                "actor-b": {
+                    "links": {
+                        "self": "/activities/001/relationships/actor-b",
+                        "related": "/actors/b2"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b2"
+                    }
+                }
+            }
+        },
+        {
+            "type": "activities",
+            "id": "zero_two",
+            "attributes": {
+                "flow-type": "ASYNC"
+            },
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/zero_two/relationships/actor-a",
+                        "related": "/actors/b2"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b2"
+                    }
+                },
+                "actor-b": {
+                    "links": {
+                        "self": "/activities/zero_two/relationships/actor-b",
+                        "related": "/actors/b__3"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b__3"
+                    }
+                },
+                "input": {
+                    "links": {
+                        "self": "/activities/zero_two/relationships/input"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "resourceA",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/zero_two/relationships/input/resource-objects/resourceA/resource-type",
+                                        "related": "/resources/resourceA"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resourceA"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "depends-on": [
+                    "zero_two"
+                ]
+            },
+            "input": [
+                {
+                    "resource_type": "resourceA"
+                }
+            ],
+            "depends-on": [
+                {
+                    "type": "activities",
+                    "id": "001"
+                }
+            ]
+        },
+        {
+            "type": "activities",
+            "id": "s3",
+            "attributes": {
+                "name": "Next Logical Step",
+                "flow-type": "SYNC"
+            },
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/s3/relationships/actor-a",
+                        "related": "/actors/actor1"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "actor1"
+                    }
+                },
+                "actor-b": {
+                    "links": {
+                        "self": "/activities/s3/relationships/actor-b",
+                        "related": "/actors/b__3"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b__3"
+                    }
+                },
+                "input": {
+                    "links": {
+                        "self": "/activities/s3/relationships/input"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "resource_B",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/s3/relationships/input/resource-objects/resource_B/resource-type",
+                                        "related": "/resources/resource_B"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resource_B"
+                                    }
+                                },
+                                "resource-state": {
+                                    "links": {
+                                        "self": "/activities/s3/relationships/input/resource-objects/resource_B/resource-state",
+                                        "related": "/resource-states/interesting-state"
+                                    },
+                                    "data": {
+                                        "type": "resource-states",
+                                        "id": "interesting-state"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "depends-on": [
+                    {
+                        "type": "activities",
+                        "id": "zero_two"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "activities",
+            "id": "t_4",
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/t_4/relationships/actor-a",
+                        "related": "/actors/b__3"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b__3"
+                    }
+                },
+                "input": {
+                    "links": {
+                        "self": "/activities/t_4/relationships/input"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "resource_C",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/t_4/relationships/input/resource-objects/resource_C/resource-type",
+                                        "related": "/resources/resource_C"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resource_C"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/t_4/relationships/input/resource-objects/resource_C/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "colour",
+                                            "attributes": {
+                                                "value": "navy"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/t_4/relationships/input/resource-objects/resource_C/parameters_values/colour",
+                                                        "related": "/resource-parameters/colour"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "colour"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "depends-on": [
+                    {
+                        "type": "activities",
+                        "id": "b__3"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "activities",
+            "id": "d4",
+            "attributes": {
+                "flow-type": "SYNC"
+            },
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/d4/relationships/actor-a",
+                        "related": "/actors/b2"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b2"
+                    }
+                },
+                "actor-b": {
+                    "links": {
+                        "self": "/activities/d4/relationships/actor-b",
+                        "related": "/actors/actor1"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "actor1"
+                    }
+                },
+                "output": {
+                    "links": {
+                        "self": "/activities/d4/relationships/output"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "box",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/d4/relationships/output/resource-objects/box/resource-type",
+                                        "related": "/resources/box"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "box"
+                                    }
+                                },
+                                "resource-state": {
+                                    "links": {
+                                        "self": "/activities/d4/relationships/output/resource-objects/box/resource-state",
+                                        "related": "/resource-states/open"
+                                    },
+                                    "data": {
+                                        "type": "resource-states",
+                                        "id": "open"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/d4/relationships/output/resource-objects/box/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "size",
+                                            "attributes": {
+                                                "value": "large"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/d4/relationships/output/resource-objects/box/parameters_values/size",
+                                                        "related": "/resource-parameters/size"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "size"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "depends-on": [
+                    {
+                        "type": "activities",
+                        "id": "t4"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "activities",
+            "id": "s5",
+            "attributes": {
+                "flow-type": "SYNC"
+            },
+            "relationships": {
+                "actor-a": {
+                    "links": {
+                        "self": "/activities/d4/relationships/actor-a",
+                        "related": "/actors/actor1"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "actor1"
+                    }
+                },
+                "actor-b": {
+                    "links": {
+                        "self": "/activities/d4/relationships/actor-b",
+                        "related": "/actors/b__3"
+                    },
+                    "data": {
+                        "type": "actors",
+                        "id": "b__3"
+                    }
+                },
+                "input": {
+                    "links": {
+                        "self": "/activities/s5/relationships/input"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "resourceA",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/input/resource-objects/resourceA/resource-type",
+                                        "related": "/resources/resourceA"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resourceA"
+                                    }
+                                },
+                                "resource-state": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/input/resource-objects/resourceA/resource-state",
+                                        "related": "/resource-states/almost_final"
+                                    },
+                                    "data": {
+                                        "type": "resource-states",
+                                        "id": "almost_final"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/input/resource-objects/resourceA/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "level",
+                                            "attributes": {
+                                                "value": "top"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/input/resource-objects/resourceA/parameters_values/level",
+                                                        "related": "/resource-parameters/level"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "level"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "feature",
+                                            "attributes": {
+                                                "value": "isEnabled"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/input/resource-objects/resourceA/parameters_values/feature",
+                                                        "related": "/resource-parameters/feature"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "feature"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "type": "resource-objects",
+                            "id": "resourceB",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/input/resource-objects/resourceB/resource-type",
+                                        "related": "/resources/resourceB"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resourceB"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/input/resource-objects/resourceB/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "price",
+                                            "attributes": {
+                                                "value": "10"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/input/resource-objects/resourceB/parameters_values/level",
+                                                        "related": "/resource-parameters/price"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "price"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "feature",
+                                            "attributes": {
+                                                "value": "low"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/input/resource-objects/resourceB/parameters_values/quality",
+                                                        "related": "/resource-parameters/quality"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "quality"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "output": {
+                    "links": {
+                        "self": "/activities/s5/relationships/output"
+                    },
+                    "data": [
+                        {
+                            "type": "resource-objects",
+                            "id": "resourceA",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/output/resource-objects/resourceA/resource-type",
+                                        "related": "/resources/resourceA"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resourceA"
+                                    }
+                                },
+                                "resource-state": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/output/resource-objects/resourceA/resource-state",
+                                        "related": "/resource-states/for_sure_final"
+                                    },
+                                    "data": {
+                                        "type": "resource-states",
+                                        "id": "for_sure_final"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/output/resource-objects/resourceA/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "level",
+                                            "attributes": {
+                                                "value": "middle"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/output/resource-objects/resourceA/parameters_values/level",
+                                                        "related": "/resource-parameters/level"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "level"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "feature",
+                                            "attributes": {
+                                                "value": "isDisabled"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/output/resource-objects/resourceA/parameters_values/feature",
+                                                        "related": "/resource-parameters/feature"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "feature"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "type": "resource-objects",
+                            "id": "resourceB",
+                            "relationships": {
+                                "resource-type": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/output/resource-objects/resourceB/resource-type",
+                                        "related": "/resources/resourceB"
+                                    },
+                                    "data": {
+                                        "type": "resources",
+                                        "id": "resourceB"
+                                    }
+                                },
+                                "parameters-values": {
+                                    "links": {
+                                        "self": "/activities/s5/relationships/output/resource-objects/resourceB/parameters-values"
+                                    },
+                                    "data": [
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "price",
+                                            "attributes": {
+                                                "value": "14"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/output/resource-objects/resourceB/parameters_values/level",
+                                                        "related": "/resource-parameters/price"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "price"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "resource-parameters-values",
+                                            "id": "feature",
+                                            "attributes": {
+                                                "value": "high"
+                                            },
+                                            "relationships": {
+                                                "resource-parameters": {
+                                                    "links": {
+                                                        "self": "/activities/s5/relationships/output/resource-objects/resourceB/parameters_values/quality",
+                                                        "related": "/resource-parameters/quality"
+                                                    },
+                                                    "data": {
+                                                        "type": "resource-parameters",
+                                                        "id": "quality"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "depends-on": [
+                    {
+                        "type": "activities",
+                        "id": "d4"
+                    }
+                ]
+            }
+        }
+    ]
+}

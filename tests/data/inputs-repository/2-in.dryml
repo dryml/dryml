@@ -1,0 +1,35 @@
+actor1 -> b2: 001
+
+b2 --> b__3: zero_two
+    in:
+        resourceA
+
+actor1 -> b__3: s3 "Next Logical Step"
+    in:
+        resource_B [interesting_state]
+
+b__3: t_4
+    in:
+        resource_C
+            colour = "navy"
+
+b2 -> actor1: d4
+    out:
+        box [open]
+            size = "large"
+
+actor1 -> b__3: s5
+    in:
+        resourceA [almost_final]
+            level = "top"
+            feature = "isEnabled"
+        resourceB
+            price = "10"
+            quality = "low"
+    out:
+        resourceA [for_sure_final]
+            level = "middle"
+            feature = "isDisabled"
+        resourceB
+            price = "14"
+            quality = "high"
