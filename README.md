@@ -7,7 +7,6 @@
 DRYML is a software modelling language, e.g. like PlantUML, but way more powerful.
 
 Here how it works:
-
 1. You describe process(es) with simple statements (see examples below)
 2. DRYML 'compiles' the process(es) and stores it in JSON format (public schema):
    1. You can version and compare processes
@@ -16,7 +15,7 @@ Here how it works:
    1. Data consistency 
    2. States transitions 
    3. Parameters data types 
-4. DRYML automatically generates UML diagrams for you of all the common types
+4. DRYML automatically generates UML diagrams of all the common types for you
    1. Use Case
    2. Activity Flow
    3. Sequence Flow
@@ -59,12 +58,12 @@ For the basic information about the DRYML, read the article "[**Introducing DRYM
 
 ## Main Principles and Reasoning
 
-Two core (set of) principles were used during the development of the DRYML
+The core (set of) principles were used during the development of the DRYML
 
 1. **Software Models Data shall be linked/ integrated** -- in order to solve the following tasks
-   1. **Ensure Software Model Data Consistency** - when you create several diagrams in PlantUML of Visio, they are completely detached; so if the same object described in two places needs to be changed, you need to do this twice, and no data consistency is validated
+   1. **Ensure Software Model Data Consistency** - when you create several diagrams in PlantUML or Visio, they are completely detached; so if the same object described in two places needs to be changed, you need to do this twice, and no data consistency is validated
    2. **Manage Software Model Knowledge** by querying it, finding relationships and dependencies
-   3. **Compile Software Model** - find out about Model Decrepancies before implementing it
+   3. **Compile Software Model** - find out about Model Discrepancies before implementing it
    4. **Test Software Model** - find Model Defects before implementing it
    5. **Reduce Time and Costs** of turning Software Model into the working Solution - provide a baseline for code autogeneration
 2. **Software Models Data shall conform to the AIFORSE [Information Framework Principles](https://gitlab.com/aiforse/aiforse-framework/-/blob/master/Information%20Framework%20(AIFORSE_infoF)/Information%20Framework%20Principles.md)**
@@ -75,7 +74,7 @@ Two core (set of) principles were used during the development of the DRYML
 
 ## Documentation
 
-The documentation structure follows the recommendation, defined in the "[AIFORSE Information Framework](https://gitlab.com/aiforse/aiforse-framework/-/blob/master/Information%20Framework%20(AIFORSE_infoF)/AIFORSE%20Information%20Framework.md)", which are explained in the article "[Software Engineering Artifacts — Let’s agree on Terminology](https://medium.com/ai-for-software-engineering/software-engineering-artifacts-lets-agree-on-terminology-4f009b351361)".
+The documentation structure follows the recommendations, defined in the "[AIFORSE Information Framework](https://gitlab.com/aiforse/aiforse-framework/-/blob/master/Information%20Framework%20(AIFORSE_infoF)/AIFORSE%20Information%20Framework.md)", which are explained in the article "[Software Engineering Artifacts — Let’s agree on Terminology](https://medium.com/ai-for-software-engineering/software-engineering-artifacts-lets-agree-on-terminology-4f009b351361)".
 
 * [Business Goals](./DOCUMENTATION/1.%20Business%20Goals/Business%20Goals%20List.md)
 * [Solution Description](./DOCUMENTATION/Solution%20Description/)
@@ -92,4 +91,3 @@ Read the [Contribution Guide](./CONTRIBUTING.md).
 ## License
 
 DRYML is licensed under the [MIT License](./LICENSE).
-
